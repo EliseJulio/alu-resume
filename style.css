@@ -67,9 +67,8 @@ span{
 }
 .img-box img{
     border-radius: 10%;
-    width: 300px;
+    width: 500px;
     animation: floatimage 4s ease-in-out infinite;
-    margin-top: 70px;
 }
 @keyframes floatimage {
     0%{
