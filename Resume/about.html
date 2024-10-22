@@ -1,0 +1,114 @@
+body{
+    flex-direction: column;
+    background-color: rgb(97, 85, 70);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    background-color: #333;
+    color: antiquewhite;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    animation-name: slideup;
+    animation-duration: 1s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.header .image1{  
+    order: 1;
+    width: 350px;
+    margin-bottom: 20px;
+}
+.header h1{
+    font-size: 50px;
+    margin: 10px 0;
+}
+.header p{
+    font-size: 20px;
+}
+.header pre{
+    font-size: 5px;
+}
+.nav1{
+    background-color: #444;
+    width: 100%;
+    padding: 20px;
+    animation-name: slideup;
+    animation-duration: 2s;    
+}
+.nav1 ul{
+    display: flex;
+    justify-content: space-around;
+}
+.nav1 ul li{
+    list-style: none;
+    text-decoration: none;
+}
+.nav1 ul li a{
+    text-decoration: none;
+    color: aquamarine;
+    font-size: 20px;
+    padding: 10px;
+}
+.nav1 ul li a:hover{
+    background-color: rgb(18, 73, 73);
+    border-radius: 10px;
+}
+main{
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: aliceblue;
+    border-radius: 20px;
+    animation-name: slideleft;
+    animation-duration: 4s;
+}
+main section{
+    margin-bottom: 40px;
+}
+main h2{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+#skills .skill{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+footer{
+    background-color: #555;
+    color: aliceblue;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+#social a{
+    color: aliceblue;
+    margin: 0 10px;
+}
+@media (max-width: 770px) {
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    main {
+        width: 100%;
+    } 
+}
+@keyframes slideleft {
+    from { transform: translateX(300%)}
+}
+@keyframes slideup {
+    from { transform: translateY(300%)}
+}
+@keyframes slideup2 {
+    from { transform: translateY(200%)}
+}
+I am passionate about using technology to solve problems and make a positive impact on the world. 
+                   I am a good learner and has a strong foundation in computer science fundamentals, proficient in some programming languages like JavaScript, HTML, CSS, Python and I worked on a some small projects. 
+                   I am a team player and enjoys collaborating with others to achieve common goals.
