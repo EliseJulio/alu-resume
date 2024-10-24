@@ -21,16 +21,6 @@ navLinks.forEach(link => {
 });
 
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
-
 
 const backToTopButton = document.getElementById('backToTop');
 window.onscroll = function () {
@@ -48,27 +38,3 @@ backToTopButton.addEventListener('click', function () {
 
 
 
-const skillsSlider = document.querySelector('.skills-slide');
-let skillsIndex = 0;
-const skillsItems = document.querySelectorAll('.skills-slide .slide-item');
-document.getElementById('skills-next').addEventListener('click', () => {
-    skillsIndex = (skillsIndex + 1) % skillsItems.length;
-    skillsSlider.style.transform = `translateX(-${skillsIndex * 100}%)`;
-});
-document.getElementById('skills-prev').addEventListener('click', () => {
-    skillsIndex = (skillsIndex - 1 + skillsItems.length) % skillsItems.length;
-    skillsSlider.style.transform = `translateX(-${skillsIndex * 100}%)`;
-});
-
-
-const projectsSlider = document.querySelector('.projects-slide');
-let projectsIndex = 0;
-const projectsItems = document.querySelectorAll('.projects-slide .slide-item');
-document.getElementById('projects-next').addEventListener('click', () => {
-    projectsIndex = (projectsIndex + 1) % projectsItems.length;
-    projectsSlider.style.transform = `translateX(-${projectsIndex * 100}%)`;
-});
-document.getElementById('projects-prev').addEventListener('click', () => {
-    projectsIndex = (projectsIndex - 1 + projectsItems.length) % projectsItems.length;
-    projectsSlider.style.transform = `translateX(-${projectsIndex * 100}%)`;
-});
